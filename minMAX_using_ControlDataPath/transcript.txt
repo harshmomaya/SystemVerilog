@@ -1,0 +1,418 @@
+WARNING: [filemgmt 20-344] File circular dependency detected using rule: define-before-use.
+INFO: [filemgmt 20-352] Relaxing define-before-use dependency to only entity and package declarations.
+launch_simulation
+WARNING: [filemgmt 20-344] File circular dependency detected using rule: define-before-use.
+INFO: [filemgmt 20-352] Relaxing define-before-use dependency to only entity and package declarations.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_findMax' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/harsh.LAPTOP-KK5S02CC/SystemVerilog_hw2/SystemVerilog_hw2.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_findMax_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/harsh.LAPTOP-KK5S02CC/SystemVerilog_hw2/SystemVerilog_hw2.srcs/sources_1/new/findMax.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module findMax
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/harsh.LAPTOP-KK5S02CC/SystemVerilog_hw2/SystemVerilog_hw2.srcs/sources_1/new/datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/harsh.LAPTOP-KK5S02CC/SystemVerilog_hw2/SystemVerilog_hw2.srcs/sources_1/new/controlpath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlpath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/harsh.LAPTOP-KK5S02CC/SystemVerilog_hw2/SystemVerilog_hw2.srcs/sim_1/new/tb_findMax.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_findMax
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/harsh.LAPTOP-KK5S02CC/SystemVerilog_hw2/SystemVerilog_hw2.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/harsh.LAPTOP-KK5S02CC/SystemVerilog_hw2/SystemVerilog_hw2.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto a085ccd4a6bd49c1a330e73997b70e18 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_findMax_behav xil_defaultlib.tb_findMax xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.controlpath
+Compiling module xil_defaultlib.findMax
+Compiling module xil_defaultlib.tb_findMax
+Compiling module xil_defaultlib.glbl
+Compiling package xil_defaultlib.hw2
+Built simulation snapshot tb_findMax_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+  **** IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/harsh.LAPTOP-KK5S02CC/SystemVerilog_hw2/SystemVerilog_hw2.sim/sim_1/behav/xsim.dir/tb_findMax_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/harsh.LAPTOP-KK5S02CC/SystemVerilog_hw2/SystemVerilog_hw2.sim/sim_1/behav/xsim.dir/tb_findMax_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Jan 30 20:19:16 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.4/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Jan 30 20:19:16 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/harsh.LAPTOP-KK5S02CC/SystemVerilog_hw2/SystemVerilog_hw2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_findMax_behav -key {Behavioral:sim_1:Functional:tb_findMax} -tclbatch {tb_findMax.tcl} -view {C:/Users/harsh.LAPTOP-KK5S02CC/SystemVerilog_hw2/tb_findMax_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+open_wave_config C:/Users/harsh.LAPTOP-KK5S02CC/SystemVerilog_hw2/tb_findMax_behav.wcfg
+source tb_findMax.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+		 Time 	 InputA 	Start 		 Mvalue 	 Done 
+
+                   0 	   0 		 0 		   x 		 0 
+
+                5000 	   0 		 0 		   0 		 0 
+
+               35000 	   0 		 1 		   0 		 0 
+
+               45000 	 146 		 1 		   0 		 0 
+
+               55000 	  64 		 1 		 146 		 0 
+
+               65000 	   4 		 1 		 146 		 0 
+
+               75000 	  49 		 1 		 146 		 0 
+
+               85000 	 134 		 1 		 146 		 0 
+
+               95000 	   0 		 0 		 146 		 1 
+
+              105000 	 198 		 0 		 146 		 0 
+
+              115000 	  50 		 1 		   0 		 0 
+
+              125000 	   9 		 1 		   0 		 0 
+
+              135000 	 128 		 1 		   9 		 0 
+
+              145000 	 134 		 1 		 128 		 0 
+
+              155000 	 187 		 1 		 134 		 0 
+
+              165000 	 158 		 1 		 187 		 0 
+
+              175000 	 246 		 1 		 187 		 0 
+
+              185000 	 198 		 1 		 246 		 0 
+
+              195000 	 252 		 1 		 246 		 0 
+
+              205000 	  99 		 1 		 252 		 0 
+
+              215000 	  99 		 0 		 252 		 1 
+
+              225000 	  98 		 1 		   0 		 0 
+
+              235000 	  85 		 1 		   0 		 0 
+
+              245000 	 242 		 1 		   0 		 0 
+
+              255000 	  59 		 1 		   0 		 0 
+
+              265000 	   9 		 1 		   0 		 0 
+
+              275000 	 199 		 1 		   0 		 0 
+
+              285000 	 199 		 0 		 199 		 1 
+
+              295000 	 249 		 1 		 199 		 0 
+
+              296000 	 249 		 0 		 199 		 1 
+
+              305000 	 249 		 0 		 199 		 0 
+
+              315000 	 103 		 1 		   0 		 0 
+
+              325000 	 116 		 1 		   0 		 0 
+
+              335000 	  98 		 1 		 116 		 0 
+
+              345000 	 174 		 1 		 116 		 0 
+
+              355000 	  94 		 1 		 174 		 0 
+
+              365000 	  22 		 1 		 174 		 0 
+
+              375000 	  50 		 1 		 174 		 0 
+
+              385000 	  49 		 1 		 174 		 0 
+
+              395000 	 133 		 1 		 174 		 0 
+
+              405000 	  64 		 1 		 174 		 0 
+
+              415000 	 144 		 1 		 174 		 0 
+
+              425000 	 213 		 1 		 174 		 0 
+
+              435000 	  78 		 1 		 213 		 0 
+
+              445000 	  75 		 1 		 213 		 0 
+
+              455000 	   9 		 1 		 213 		 0 
+
+              465000 	   6 		 1 		 213 		 0 
+
+              475000 	  41 		 1 		 213 		 0 
+
+              485000 	 181 		 1 		 213 		 0 
+
+              495000 	 106 		 1 		 213 		 0 
+
+              505000 	   1 		 1 		 213 		 0 
+
+              515000 	  87 		 1 		 213 		 0 
+
+              525000 	 142 		 1 		 213 		 0 
+
+              535000 	 103 		 1 		 213 		 0 
+
+              545000 	 145 		 1 		 213 		 0 
+
+              555000 	 133 		 1 		 213 		 0 
+
+              565000 	 101 		 1 		 213 		 0 
+
+              575000 	  30 		 1 		 213 		 0 
+
+              585000 	 249 		 1 		 213 		 0 
+
+              595000 	 197 		 1 		 249 		 0 
+
+              605000 	 160 		 1 		 249 		 0 
+
+              615000 	 108 		 1 		 249 		 0 
+
+              625000 	 188 		 1 		 249 		 0 
+
+              635000 	   0 		 0 		 249 		 1 
+
+              645000 	   0 		 0 		 249 		 0 
+
+              655000 	   0 		 0 		   0 		 0 
+
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_findMax_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 869.469 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+WARNING: [filemgmt 20-344] File circular dependency detected using rule: define-before-use.
+INFO: [filemgmt 20-352] Relaxing define-before-use dependency to only entity and package declarations.
+WARNING: [filemgmt 20-344] File circular dependency detected using rule: define-before-use.
+INFO: [filemgmt 20-352] Relaxing define-before-use dependency to only entity and package declarations.
+launch_simulation
+WARNING: [filemgmt 20-344] File circular dependency detected using rule: define-before-use.
+INFO: [filemgmt 20-352] Relaxing define-before-use dependency to only entity and package declarations.
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_findMax' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/harsh.LAPTOP-KK5S02CC/SystemVerilog_hw2/SystemVerilog_hw2.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_findMax_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/harsh.LAPTOP-KK5S02CC/SystemVerilog_hw2/SystemVerilog_hw2.srcs/sources_1/new/findMax.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module findMax
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/harsh.LAPTOP-KK5S02CC/SystemVerilog_hw2/SystemVerilog_hw2.srcs/sources_1/new/datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/harsh.LAPTOP-KK5S02CC/SystemVerilog_hw2/SystemVerilog_hw2.srcs/sources_1/new/controlpath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controlpath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/harsh.LAPTOP-KK5S02CC/SystemVerilog_hw2/SystemVerilog_hw2.srcs/sim_1/new/tb_findMax.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_findMax
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/harsh.LAPTOP-KK5S02CC/SystemVerilog_hw2/SystemVerilog_hw2.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/harsh.LAPTOP-KK5S02CC/SystemVerilog_hw2/SystemVerilog_hw2.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto a085ccd4a6bd49c1a330e73997b70e18 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_findMax_behav xil_defaultlib.tb_findMax xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.controlpath
+Compiling module xil_defaultlib.findMax
+Compiling module xil_defaultlib.tb_findMax
+Compiling module xil_defaultlib.glbl
+Compiling package xil_defaultlib.hw2
+Built simulation snapshot tb_findMax_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+  **** IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/harsh.LAPTOP-KK5S02CC/SystemVerilog_hw2/SystemVerilog_hw2.sim/sim_1/behav/xsim.dir/tb_findMax_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/harsh.LAPTOP-KK5S02CC/SystemVerilog_hw2/SystemVerilog_hw2.sim/sim_1/behav/xsim.dir/tb_findMax_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Jan 30 20:19:52 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.4/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Jan 30 20:19:52 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/harsh.LAPTOP-KK5S02CC/SystemVerilog_hw2/SystemVerilog_hw2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_findMax_behav -key {Behavioral:sim_1:Functional:tb_findMax} -tclbatch {tb_findMax.tcl} -view {C:/Users/harsh.LAPTOP-KK5S02CC/SystemVerilog_hw2/tb_findMax_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+open_wave_config C:/Users/harsh.LAPTOP-KK5S02CC/SystemVerilog_hw2/tb_findMax_behav.wcfg
+source tb_findMax.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+		 Time 	 InputA		 Start	 	 Mvalue 	 Done 
+
+                   0 	 255 		 0 		   x 		 0 
+
+                5000 	 255 		 0 		 255 		 0 
+
+               35000 	 255 		 1 		 255 		 0 
+
+               45000 	 146 		 1 		 255 		 0 
+
+               55000 	  64 		 1 		 146 		 0 
+
+               65000 	   4 		 1 		  64 		 0 
+
+               75000 	  49 		 1 		   4 		 0 
+
+               85000 	 134 		 1 		   4 		 0 
+
+               95000 	   0 		 0 		   4 		 1 
+
+              105000 	 198 		 0 		   4 		 0 
+
+              115000 	  50 		 1 		 255 		 0 
+
+              125000 	   9 		 1 		 255 		 0 
+
+              135000 	 128 		 1 		   9 		 0 
+
+              145000 	 134 		 1 		   9 		 0 
+
+              155000 	 187 		 1 		   9 		 0 
+
+              165000 	 158 		 1 		   9 		 0 
+
+              175000 	 246 		 1 		   9 		 0 
+
+              185000 	 198 		 1 		   9 		 0 
+
+              195000 	 252 		 1 		   9 		 0 
+
+              205000 	  99 		 1 		   9 		 0 
+
+              215000 	  99 		 0 		   9 		 1 
+
+              225000 	  98 		 1 		 255 		 0 
+
+              235000 	  85 		 1 		 255 		 0 
+
+              245000 	 242 		 1 		 255 		 0 
+
+              255000 	  59 		 1 		 255 		 0 
+
+              265000 	   9 		 1 		 255 		 0 
+
+              275000 	 199 		 1 		 255 		 0 
+
+              285000 	 199 		 0 		 199 		 1 
+
+              295000 	 249 		 1 		 199 		 0 
+
+              296000 	 249 		 0 		 199 		 1 
+
+              305000 	 249 		 0 		 199 		 0 
+
+              315000 	 103 		 1 		 255 		 0 
+
+              325000 	 116 		 1 		 255 		 0 
+
+              335000 	  98 		 1 		 116 		 0 
+
+              345000 	 174 		 1 		  98 		 0 
+
+              355000 	  94 		 1 		  98 		 0 
+
+              365000 	  22 		 1 		  94 		 0 
+
+              375000 	  50 		 1 		  22 		 0 
+
+              385000 	  49 		 1 		  22 		 0 
+
+              395000 	 133 		 1 		  22 		 0 
+
+              405000 	  64 		 1 		  22 		 0 
+
+              415000 	 144 		 1 		  22 		 0 
+
+              425000 	 213 		 1 		  22 		 0 
+
+              435000 	  78 		 1 		  22 		 0 
+
+              445000 	  75 		 1 		  22 		 0 
+
+              455000 	   9 		 1 		  22 		 0 
+
+              465000 	   6 		 1 		   9 		 0 
+
+              475000 	  41 		 1 		   6 		 0 
+
+              485000 	 181 		 1 		   6 		 0 
+
+              495000 	 106 		 1 		   6 		 0 
+
+              505000 	   1 		 1 		   6 		 0 
+
+              515000 	  87 		 1 		   1 		 0 
+
+              525000 	 142 		 1 		   1 		 0 
+
+              535000 	 103 		 1 		   1 		 0 
+
+              545000 	 145 		 1 		   1 		 0 
+
+              555000 	 133 		 1 		   1 		 0 
+
+              565000 	 101 		 1 		   1 		 0 
+
+              575000 	  30 		 1 		   1 		 0 
+
+              585000 	 249 		 1 		   1 		 0 
+
+              595000 	 197 		 1 		   1 		 0 
+
+              605000 	 160 		 1 		   1 		 0 
+
+              615000 	 108 		 1 		   1 		 0 
+
+              625000 	 188 		 1 		   1 		 0 
+
+              635000 	   0 		 0 		   1 		 1 
+
+              645000 	   0 		 0 		   1 		 0 
+
+              655000 	   0 		 0 		 255 		 0 
+
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_findMax_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 869.469 ; gain = 0.000
